@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水平居中</title>
+    <style>
+        body {
+            background: #F6D400;
+        }
+
+        header,
+        nav {
+            text-align: center;
+            background: white;
+            margin: 20px 0;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            background: #8D1841;
+            border-radius: 5px;
+            color: white;
+            padding: 3px 8px;
+        }
+
+        main {
+            margin: 20px 0;
+            padding: 10px;
+        }
+
+        .center {
+            margin: 0 auto;
+            width: 200px;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin-top: 50px;
+            padding: 15px;
+            border: 1px solid red;
+        }
+
+        section div {
+            background: #8D1841;
+            color: white;
+            padding: 15px;
+            margin: 5px;
+        }
+
+        .inline-block-center {
+            text-align: center;
+        }
+
+        .inline-block-center div {
+            display: inline-block;
+            text-align: left;
+            max-width: 125px;
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flex-center div {
+            max-width: 125px;
+        }
+
+        .block-center div {
+            margin: 0 auto;
+            padding: 15px;
+            margin: 5px auto;
+        }
+
+        .block-center div:nth-child(1) {
+            width: 200px;
+        }
+
+        .block-center div:nth-child(2) {
+            width: 400px;
+        }
+
+        .block-center div:nth-child(3) {
+            width: 125px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>
+
+            <span> 文字水平居中</span>
+        </div>
+    </header>
+
+    <nav role='navigation'>
+        <a href="#0">a标签1</a>
+        <a href="#0">a标签2</a>
+        <a href="#0">a标签3</a>
+        <a href="#0">a标签4</a>
+        <a href="#0">a标签5</a>
+    </nav>
+
+
+    <main>
+        <section>
+            <div class="center">
+                这是一个水平居中的块级元素
+            </div>
+        </section>
+
+        <section class="inline-block-center">
+            <div>
+                根深蒂固的闪光点撒啊啊啊啊啊啊啊啊啊啊的时代精神的是点击发送的健康酷酷酷酷酷酷思考的是丰富的时间
+            </div>
+            <div>
+                根深蒂固的闪光点撒啊啊啊啊啊啊啊啊啊啊的时代精神的是点击发送的健康酷酷酷酷酷酷思考的是丰富的时间
+                根深蒂固的闪光点撒啊啊啊啊啊啊啊啊啊啊的时代精神的是点击发送的健康酷酷酷酷酷酷思考的是丰富的时间
+            </div>
+            <div>
+                根深蒂固的闪光点撒啊啊啊啊啊啊啊啊啊啊的时代精神的是点击发送的健康酷酷酷酷酷酷思考的是丰富的时间
+            </div>
+        </section>
+        <section class="flex-center">
+            <div>
+                根深蒂固的闪光点撒啊啊啊啊啊啊啊啊啊啊的时代精神的是点击发送的健康酷酷酷酷酷酷思考的是丰富的时间
+            </div>
+            <div>
+                根深蒂固的闪光点撒啊啊啊啊啊啊啊啊啊啊的时代精神的是点击发送的健康酷酷酷酷酷酷思考的是丰富的时间
+                根深蒂固的闪光点撒啊啊啊啊啊啊啊啊啊啊的时代精神的是点击发送的健康酷酷酷酷酷酷思考的是丰富的时间
+            </div>
+            <div>
+                根深蒂固的闪光点撒啊啊啊啊啊啊啊啊啊啊的时代精神的是点击发送的健康酷酷酷酷酷酷思考的是丰富的时间
+            </div>
+        </section>
+        <section class="block-center">
+            <div>
+                根深蒂固的闪光点撒啊啊啊啊啊啊啊啊啊啊的时代精神的是点击发送的健康酷酷酷酷酷酷思考的是丰富的时间
+            </div>
+            <div>
+                根深蒂固的闪光点撒啊啊啊啊啊啊啊啊啊啊的时代精神的是点击发送的健康酷酷酷酷酷酷思考的是丰富的时间
+                根深蒂固的闪光点撒啊啊啊啊啊啊啊啊啊啊的时代精神的是点击发送的健康酷酷酷酷酷酷思考的是丰富的时间
+            </div>
+            <div>
+                根深蒂固的闪光点撒啊啊啊啊啊啊啊啊啊啊的时代精神的是点击发送的健康酷酷酷酷酷酷思考的是丰富的时间
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
